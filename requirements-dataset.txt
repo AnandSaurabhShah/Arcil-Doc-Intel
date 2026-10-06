@@ -1,0 +1,4 @@
+# Versions used to produce the checked dataset manifests.
+Pillow==12.3.0
+numpy==2.4.2
+pyarrow==23.0.1

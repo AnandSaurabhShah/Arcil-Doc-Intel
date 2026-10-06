@@ -1,0 +1,56 @@
+# High-sensitivity source data
+/train/images/
+/train/labels/
+/valid/images/
+/valid/labels/
+/test/images/
+/test/labels/
+/data/raw/
+
+# Generated canonical data and split materializations
+/data/canonical/images/
+/data/canonical/labels/
+/data/splits/
+/data/manifests/
+
+# Source-dataset metadata is kept local with the protected corpus
+/data.yaml
+/README.dataset.txt
+/README.roboflow.txt
+
+# Local-only secrets and privacy-sensitive diagnostics
+/.local_secrets/
+/.env
+/.env.*
+!/.env.example
+/data/debug_pii/
+/debug_pii/
+/**/generated_crops/
+/**/ocr_transcripts/
+/**/qr_payloads/
+
+# Model artifacts that may retain training metadata
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.engine
+*.tflite
+*.pkl
+*.joblib
+/models/checkpoints/
+
+# Local IDE and operating-system artifacts
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python/test artifacts
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage

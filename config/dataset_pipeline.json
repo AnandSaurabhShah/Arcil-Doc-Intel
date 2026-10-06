@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "preprocessing_version": "canonical-aadhaar-detection-v1.0.0",
+  "generation_timestamp": "2026-10-07T00:00:00+05:30",
+  "seed": 20261007,
+  "split_ratios": {
+    "train": 0.70,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "clip_tolerance": 0.0001,
+  "suspicious_min_area": 0.000001,
+  "suspicious_max_area": 0.95,
+  "suspicious_max_aspect_ratio": 50.0,
+  "phash_distance_threshold": 4,
+  "annotation_similarity_threshold": 0.65,
+  "aspect_ratio_relative_tolerance": 0.03,
+  "include_secondary_classes": false,
+  "canonical_classes": {
+    "0": "FULL_UID",
+    "1": "MASKED_UID",
+    "2": "QR"
+  },
+  "primary_class_mapping": {
+    "5": 0,
+    "6": 1,
+    "8": 2
+  },
+  "secondary_class_mapping": {
+    "9": 3,
+    "7": 4,
+    "0": 5,
+    "1": 6,
+    "2": 7,
+    "3": 8,
+    "4": 9,
+    "10": 10,
+    "11": 11
+  },
+  "secondary_classes": {
+    "3": "UID_REDACTION",
+    "4": "PHOTO",
+    "5": "ADDRESS",
+    "6": "DOB",
+    "7": "GENDER",
+    "8": "HOLDER_NAME",
+    "9": "AADHAAR_LOGO",
+    "10": "EMBLEM",
+    "11": "GOV_LOGO"
+  }
+}
